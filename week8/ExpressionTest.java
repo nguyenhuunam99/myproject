@@ -20,7 +20,7 @@ public class ExpressionTest {
 			Expression chia = new Division(num1, num0);
 			System.out.println(chia.evaluate());
 		} catch (Exception e) {
-			System.out.println("Lỗi chia cho 0");
+			System.out.println("division 0");
 		}
 		
 		Expression s1 = new Square(num10); // 10^2

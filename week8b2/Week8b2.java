@@ -5,7 +5,11 @@
  */
 package week8b2;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  *
@@ -25,20 +29,33 @@ public class Week8b2 {
         int a[] = {1,3};
         System.out.println(a[2]);
     }
-    public static void nullpoint() //throws NullPointerException
+    public static void nullpoint() throws NullPointerException
     {
         String s= null;
         System.out.println(s.length());
     }
-    
-    public static void main(String[] args) {
-        // TODO code application logic here
-        try {
-            nullpoint();
-        } catch (Exception e) {
-            System.out.println("error");
-        }
-
+    public static void classcast() throws ClassCastException{
+         Object x = new Integer(10);
+        System.out.println((String) x);
     }
-
+ //   public static void
+    public static void io() throws FileNotFoundException, IOException{
+        FileInputStream file = new FileInputStream("2.txt");
+        file.read();
+        
+    }
+    public static void main(String[] args) throws IOException
+    {
+        try {
+            int c=divison(2,0);
+            nullpoint();
+            classcast();
+            print();
+            io();
+            
+        } catch (Exception e) {
+            System.out.println("Error!");
+        }
+        
+    }
 }
