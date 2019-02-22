@@ -53,4 +53,10 @@ public class Triangle extends Shape{
         double area=Math.sqrt(getPerimeter()*(getPerimeter()-side1)*(getPerimeter()-side2)*(getPerimeter()-side3));
         return area;
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" + "side1=" + side1 + ", side2=" + side2 + ", side3=" + side3 + '}';
+    }
+    
 }

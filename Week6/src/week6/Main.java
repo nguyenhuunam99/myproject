@@ -1,17 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package week6;
-
-/**
- *
- * @author Admin
- */
-public class Main {
-    public static void main(String[] args) {
-        Triangle x = new Triangle(3,4,5);
-        System.out.println(x.getArea());
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Diagram y=new Diagram();
+        y.x.Nhap();
+//        y.x.removeTriangle();
+ //       y.removecircle();
+        y.x.xuat();
     }
 }
+        

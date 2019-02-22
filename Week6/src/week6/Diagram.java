@@ -7,8 +7,19 @@ package week6;
 
 /**
  *
- * @author Admin
+ * @author CCNE
  */
 public class Diagram {
-    
+    Layer x=new Layer();
+    public void removecircle()
+    {
+        for(int i=0;i<x.layer.size();i++)
+        {
+            if(x.layer.get(i) instanceof Circle)
+            {
+                x.layer.remove(i);
+                i--;
+            }
+        }
+    }
 }
